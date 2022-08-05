@@ -81,11 +81,7 @@ a:visited {
     }
   }
 
-  @media (max-width: 650px) {
-    .form-row {
-      display: block;
-    }
-}
+
 
 .info-text p {
     font-style: italic;
@@ -149,6 +145,16 @@ margin-bottom: 10px;
     width: 50%;
 }
 
+@media (max-width: 650px) {
+    .form-row {
+      display: block;
+    }
+    .form-row .form-group {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+      }
+}
 .form-row .form-group:last-child {
     margin-right: 0;
 }
