@@ -2,64 +2,68 @@
 <html>
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="stayles.css">
     <title>Ростислав Татевосян</title>
 </head>
 <body>
-    <header></header>
-    <main>
-        <img src="avatar.jpg" alt="Аватарка с ВК" width="200">
-        <h1>Ростислав Татевосян</h1>
-        <p>Этот сайт для выполнение правкического задания на <a href="https://vladilen.ru/" target="_blank">бесплатном курсе</a> </p>
-        <h4>Мои соцелальные сети и контакты</h4>
-        <a href="https://vk.com/tatevosyan_ra" target="_blank">Вконтаете</a>
-        <a href="https://t.me/Rostislav_AtaR" target="_blank">Telegram</a>
-        <h2>Мои хобби</h2>
-        <ol>
-            <li>Путишевствия</li>
-            <li>Настольный тенис</li>
-            <li>SUP серфинг</li>
-        </ol>
-
-        <h2>Мои проекты</h2>
-        <table>
-            <thead>
-                <tr>
-                    <th>Название</th>
-                    <th>Дата</th>
-                    <th>Ссылка</th>
-                </tr>
-            </thead>
-            <tbody>
-             <tr>
-                <td>Для правктики</td>
-                <td>31.07.22</td>
-                <td><a href="http://" target="_blank">тут</a></td>
-             </tr>
-            </tbody>
-        </table>
-
-        <h2>Связаться со мной</h2>
-            <form action="">
-                <div>
-                    <label for="name">Ваше имя:</label>
-                    <input type="text" id="name" placeholder="Введите имя">
+    <div class="conteiner">
+            <div class="info">
+                <img src="avatar.jpg" alt="Аватарка с ВК" class="avatar">
+                <div class="info-text">
+                    <h1>Ростислав Татевосян</h1>
+                    <p>Этот сайт для выполнение правкического задания на <a href="https://vladilen.ru/" target="_blank">бесплатном курсе</a> </p>
+                    <h4>Мои соцелальные сети и контакты</h4>
+                    <a href="https://vk.com/tatevosyan_ra" target="_blank">Вконтаете</a>
+                    <a href="https://t.me/Rostislav_AtaR" target="_blank">Telegram</a>
                 </div>
-
-                <div>
-                    <label for="email">Ваш email:</label>
-                    <input type="email" id="email" placeholder="Введите email">
+            </div>
+                <div class="card bg-green">
+                    <h2>Мои хобби</h2>
+                    <ol class="list">
+                        <li>Путишевствия</li>
+                        <li>Настольный тенис</li>
+                        <li>SUP серфинг</li>
+                    </ol>
+                </div>    
+                <div class="card bd-red">
+                    <h2>Мои проекты</h2>
+                    <table class="tabel">
+                        <!-- <thead>
+                            <tr>
+                                <th>Название</th>
+                                <th>Дата</th>
+                                <th>Ссылка</th>
+                            </tr>
+                        </thead> -->
+                        <tbody>
+                        <tr>
+                            <td>Для правктики</td>
+                            <td>31.07.22</td>
+                            <td><a href="http://" target="_blank">тут</a></td>
+                        </tr>
+                        </tbody>
+                    </table>
                 </div>
+                     <form class="form-group" action="">
+                        <h2>Связаться со мной</h2>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Ваше имя:</label>
+                            <input type="text" id="name" placeholder="Введите имя">
+                        </div>
 
-                <div>
-                    <label for="message">Ваше сообщение</label>
-                    <br>
-                    <textarea id="message" cols="20" rows="5" placeholder="Введите сообщение..."></textarea>
-                </div>
-                <input type="submit" value="Отправить">
-            </form>
-
-
-    </main>
-    <footer></footer>
+                        <div class="form-group">
+                            <label for="email">Ваш email:</label>
+                            <input type="email" id="email" placeholder="Введите email">
+                        </div>
+                    </div>
+                        <div>
+                            <label for="message">Ваше сообщение</label>
+                            <textarea id="message" cols="20" rows="5" placeholder="Введите сообщение..."></textarea>
+                        </div>
+                        <input class="btn" type="submit" value="Отправить">
+                    </form>
+    </div>            
+         
 </body>
 </html>
