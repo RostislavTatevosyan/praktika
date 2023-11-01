@@ -20,6 +20,7 @@ a {
   border-color: gray;
   border-width: 1px;
   border-radius: 3px;
+  color: gray;
 }
 a:hover {
   text-decoration: underline;
@@ -27,9 +28,7 @@ a:hover {
 a:active {
   color: blue;
 }
-a:visited {
-  color: gray;
-}
+
 
 .list {
   padding: 0 20px;
@@ -41,6 +40,7 @@ a:visited {
 
 .tabel {
   width: 100%;
+  text-align: left;
 }
 .tabel td {
   padding-bottom: 10px;
@@ -90,6 +90,10 @@ a:visited {
     justify-content: center;
     text-align: center;
   }
+  .list {
+    text-align: left;
+  }
+  
 }
 
 .info-avatar {
