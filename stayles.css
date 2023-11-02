@@ -2,8 +2,13 @@
 
 :root {
 	--color-main: #0f141e;
+	--color-main-rgb: rgb(15, 20, 30);
 	--color-accent: #86898f;
 	--bg-color: #f1f1f1;
+	--bg-card-hobby: #e5ffe7;
+	--bg-card-certificates: #fff9dc;
+	--bg-card-projects: #ffe5e5;
+	color-scheme: light;
 }
 body {
 	font-family: 'Roboto' sans-serif;
@@ -137,7 +142,7 @@ a:active {
 .info-text p {
 	font-style: italic;
 	font-weight: bold;
-	color: #86898f;
+	color: var(--color-accent);
 	margin: 0;
 }
 
@@ -154,16 +159,16 @@ a:active {
 	margin-bottom: 10px;
 }
 
-.bg-yellow {
-	background: #fff9dc;
+.card-certificates {
+	background: var(--bg-card-certificates);
 }
 
-.bd-red {
-	background: #ffe5e5;
+.card-projects {
+	background: var(--bg-card-projects);
 }
 
-.bg-green {
-	background: #e5ffe7;
+.card-hobby {
+	background: var(--bg-card-hobby);
 }
 
 .form h2 {
@@ -183,7 +188,7 @@ a:active {
 	border: none;
 	background: transparent;
 	border-bottom: 1px solid #ccc;
-	color: #000;
+	color: var(--color-main-rgb);
 	padding: 15px 0 10px;
 	outline: none;
 	font-family: inherit;
@@ -213,4 +218,21 @@ a:active {
 }
 .form-row .form-group:last-child {
 	margin-right: 0;
+}
+
+/* Dark */
+
+.dark {
+	--color-main: #fff;
+	--color-main-rgb: 255, 255, 255;
+	--bg-color: var(--color-main-rgb);
+	
+	
+	--bg-card-projects: #86898F;
+	--bg-card-hobby: #86898F;
+	--bg-card-certificates:#86898F;
+	--color-accent: #fff;
+	
+	
+	color-scheme: dark;
 }
